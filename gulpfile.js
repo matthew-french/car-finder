@@ -1,3 +1,5 @@
+// A change to test pull request
+
 // Gulp Dependencies
 var gulp = require('gulp');
 var rename = require('gulp-rename');
@@ -20,6 +22,7 @@ var mochaPhantomjs = require('gulp-mocha-phantomjs');
 
 
 // Lint
+
 gulp.task('lint-client', function() {
   return gulp.src('./client/**/*.js')
     .pipe(jshint())
@@ -35,6 +38,7 @@ gulp.task('lint-test', function() {
 
 
 // Browserify
+
 gulp.task('browserify-client', ['lint-client'], function() {
   return gulp.src('client/index.js')
     .pipe(browserify({
